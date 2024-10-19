@@ -1,10 +1,10 @@
 function calculator() {
 
-    return {
-        num1: null,
-        num2: null,
-        result: null,
+    let num1 = null;
+    let num2 = null;
+    let result = null;
 
+    return {
         init(selector1, selector2, resultSelector) {
             num1 = document.querySelector(selector1);
             num2 = document.querySelector(selector2);
@@ -20,10 +20,3 @@ function calculator() {
         }
     }
 }
-
-const calculate = calculator();
-calculate.init('#num1', '#num2', '#result');
-
-
-
-
